@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Botó inscripció GTAF</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <img class="app-logo" src="../icons/icon48.png" alt="Icona" />
+      <div>
+        <h1 class="app-title">Botó inscripció GTAF</h1>
+        <p class="app-subtitle">Genera el botó d'inscripció de la formació</p>
+      </div>
+    </header>
+
+    <main class="app-body">
+      <section class="card config-card">
+        <label class="field">
+          <span class="field-label" for="codigo">Codi d'activitat</span>
+          <input
+            type="text"
+            id="codigo"
+            class="input"
+            placeholder="A130011A13"
+            maxlength="30"
+            autocomplete="off"
+            spellcheck="false"
+            aria-describedby="codigo-help"
+          />
+          <span class="field-help" id="codigo-help"
+            >El codi segueix el format com ara A130011A13.</span
+          >
+          <span class="field-error" id="codigo-error"></span>
+        </label>
+
+        <label class="field">
+          <span class="field-label" for="titol">Títol</span>
+          <input
+            type="text"
+            id="titol"
+            class="input"
+            placeholder="Títol de l'activitat"
+            maxlength="200"
+            autocomplete="off"
+            spellcheck="false"
+          />
+        </label>
+
+        <label class="field">
+          <span class="field-label" for="curs">Curs</span>
+          <select id="curs" class="input select"></select>
+        </label>
+
+        <p class="detect-note" id="detect-note" role="status" hidden></p>
+      </section>
+
+      <button id="generate" class="btn btn-primary" type="button">
+        <span class="btn-label">Genera botó</span>
+        <span class="btn-icon" aria-hidden="true">&#8594;</span>
+      </button>
+      <p class="error-global" id="error-global" role="alert" hidden></p>
+
+      <section class="result" id="result" hidden>
+        <div class="result-head">
+          <span class="result-title">El teu botó està llest</span>
+          <span class="result-badge">Generat</span>
+        </div>
+        <p class="result-summary" id="result-summary"></p>
+        <a
+          class="result-url"
+          id="result-url"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Obrir l'enllaç"
+        ></a>
+        <div class="preview" id="preview" hidden>
+          <span class="preview-label">Així es veurà al correu</span>
+          <div class="preview-body">
+            <div class="email-card">
+              <div class="email-code" id="email-code"></div>
+              <div class="email-titol" id="email-titol" hidden></div>
+              <a
+                class="btn-email"
+                id="email-button"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                >INSCRIPCIÓ</a
+              >
+            </div>
+          </div>
+        </div>
+        <button id="open" class="btn btn-inscriure" type="button">
+          <span class="btn-label">Inscripció</span>
+          <span class="btn-icon" aria-hidden="true">&#8599;</span>
+        </button>
+        <button id="copy-btn" class="btn btn-copy-btn" type="button">
+          <span class="btn-label">Copia el botó</span>
+        </button>
+        <button id="copy-link" class="btn btn-secondary" type="button">
+          <span class="btn-label">Copia l'enllaç</span>
+        </button>
+      </section>
+    </main>
+
+    <footer class="app-footer">
+      <span>Dades del moment: es calcula el curs automàticament.</span>
+    </footer>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

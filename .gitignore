@@ -1,0 +1,11 @@
+# Sistema
+Thumbs.db
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Node
+node_modules/
