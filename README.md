@@ -55,4 +55,4 @@ https://aplicacions.gestioeducativa.gencat.cat/ords/pls/soloas/pk_for_mod_ins.p_
 
 ## Llicència
 
-Sense llicència esmentada; projecte d'ús educatiu.
+MIT. Consulta el fitxer [LICENSE](LICENSE).
