@@ -20,10 +20,11 @@ https://aplicacions.gestioeducativa.gencat.cat/ords/pls/soloas/pk_for_mod_ins.p_
 ## Instal·lació (modo desenvolupament)
 
 1. Descarrega o clona aquest repositori.
-2. Obre `chrome://extensions` a Chrome.
-3. Activa el **mode desenvolupador** (cantonada superior dreta).
-4. Cliqueu **"Carrega desempaquetada"** i selecciona la carpeta del projecte.
-5. Fixa l'extensió a la barra d'eines i obre el popup.
+2. Desa la carpeta a un lloc permanent. Un cop instal·lada l'extensió, la carpeta no es pot esborrar.
+3. Obre `chrome://extensions` a Chrome.
+4. Activa el **mode desenvolupador** (cantonada superior dreta).
+5. Cliqueu **"Carrega desempaquetada"** i selecciona la carpeta del projecte.
+6. Fixa l'extensió a la barra d'eines i obre el popup.
 
 ## Ús ràpid
 
